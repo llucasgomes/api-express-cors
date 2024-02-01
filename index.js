@@ -3,8 +3,9 @@ import cors from "cors";
 
 
 const app = express();
-const port = 6666;
+const port = 3001;
 
+app.use(express.json());
 // Middleware CORS para permitir requisições de diferentes origens
 app.use(cors());
 
